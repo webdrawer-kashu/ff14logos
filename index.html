@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+<title>FF14 ロゴスアクションチェッカー</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>FF14 ロゴスアクションチェッカー</h1>
+
+<div id="app">
+
+<div class="update">ヒュダトス編で追加されたアクションを追加しました。<br>
+適応する場合はお手数ですが、[使い方・注意事項]の開くを押して、一度データリセットボタンを押しリセット。再度選択し直してください。</div>
+
+<div class="exp">
+<h2>使い方・注意事項</h2>
+<div class="openBtn" v-on:click="attOpen">開く/閉じる</div>
+<div class="expList" v-bind:class="{'open': this.isAtt}">
+<ul>
+<li>四角が並んでいるエリアがロゴスアクションの版と対応しています。</li>
+<li>開放したアクションをクリックすることで色がつくので、取得したかしていないかすぐわかります。</li>
+<li>「抽出シャード」は開放したアクションをクリックすると、対応する「抽出シャード」は表示から消えます。</li>
+<!--<li>「残りシャード」は開放したアクションに対応する残りシャード必要数は減少します</li>
+<li>「残りシャード」は未鑑定から直接出るものは未鑑定のものを、鑑定して●●シャードにしてからまた抽出するものは●●シャードを数として数えていますので、
+未鑑定シャードの数は表示されている数よりは必要になります</li>-->
+<li>選択状態は手元のブラウザに保存されますので、別のPC・スマホで見ると状態がリセットされます</li>
+<li>何かしら表示データがおかしい場合は「データリセットボタン」で一度リセットしてください</li>
+</ul>
+<p class="reset" v-on:click="resetBtn">データリセットボタン</p>
+</div>
+</div>
+
+<div id="wrap">
+<div v-for="(item,index) in search_list" class="box" v-bind:class="{'get':item.isGet}" v-on:click="toggle(index)">{{item.name}}</div>
+</div>
+<!-- /#wrap -->
+
+<div id="material">
+<h2>抽出シャード</h2>
+<div class="inner">
+<div v-bind:class="{'get':item.isGet}" v-for="(item,index) in search_list" class="materials" v-on:click="toggle(index)">
+<h3>{{item.name}}</h3>
+<ul v-for="(value,key) in item.material1">
+<li>{{key}} * {{value}}</li>
+</ul>
+<div v-if="item.materialNum > 1" class="item">
+<p>もしくは</p>
+<ul v-for="(value,key) in item.material2">
+<li>{{key}} * {{value}}</li>
+</ul>
+</div>
+<div v-if="item.materialNum > 2" class="item">
+<p>もしくは</p>
+<ul v-for="(value,key) in item.material3">
+<li>{{key}} * {{value}}</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- /#materials -->
+
+<!--<div id="remaining">
+<h2>残りシャード必要数</h2>
+<ul>
+<li v-for="(value,key) in sort_list">{{key}}：{{value}}個</li>
+</ul>
+</div>-->
+<!-- /#remaining -->
+
+</div>
+
+<p id="address"><small>記載されている会社名・製品名・システム名などは、各社の商標、または登録商標です。 <br>
+Copyright (C) 2010 - 2018 SQUARE ENIX CO., LTD. All Rights Reserved. </small></p>
+
+<div class="ad01">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- webdrawer2_top_under -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1236278467093787"
+     data-ad-slot="9107880287"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<script src="https://unpkg.com/vue@2.5.2/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="scripts.js?190408"></script>
+<script src="/js/analysis.js"></script>
+</body>
+</html>

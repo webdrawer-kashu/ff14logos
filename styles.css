@@ -1,0 +1,485 @@
+@charset "UTF-8";
+
+* {
+margin: 0;
+padding: 0;
+color: #ffffff;
+}
+
+.dpc {
+display: block;
+}
+
+.dsp {
+display: none;
+}
+
+body {
+background-color: #313131;
+}
+
+h1 {
+padding: 15px;
+font-size: 16px;
+}
+
+h2 {
+margin-bottom: 10px;
+border-bottom: 1px solid #ccc;
+font-size: 15px;
+}
+
+#app {
+padding: 0 20px;
+}
+
+.update {
+margin: 20px auto;
+padding: 5px;
+width: 700px;
+border: 1px solid #fff;
+font-size: 12px;
+}
+
+.exp {
+margin: 0 auto 20px;
+width: 700px;
+position: relative;
+}
+
+.exp .openBtn {
+padding: 3px 8px;
+position: absolute;
+top: 0;
+right: 0;
+border: 1px solid #fff;
+line-height: 1;
+font-size: 12px;
+cursor: pointer;
+}
+
+.exp .expList {
+display: none;
+}
+
+.exp .expList.open {
+display: block;
+}
+
+.exp li {
+margin-left: 15px;
+font-size: 13px;
+}
+
+.exp .reset {
+margin: 10px auto;
+padding: 5px;
+width: 12em;
+border: 1px solid #eee;
+font-size: 13px;
+text-align: center;
+cursor: pointer;
+}
+
+.exp .reset:hover {
+color: #000;
+background-color: #fff;
+}
+
+#wrap {
+display: flex;
+flex-wrap: wrap;
+margin: 0 auto 20px;
+width: 540px;
+background: #272727;
+border: 1px solid #525252;
+}
+
+#wrap .box {
+margin: 5px;
+width: 44px;
+height: 44px;
+background: url(img/action_no.png) no-repeat left top #000;
+background-size: 44px auto;
+cursor: pointer;
+text-indent: -9999px;
+}
+
+#wrap .box.get {
+background-color: orange;
+}
+
+#wrap .box:nth-of-type(1).get {
+background: url(img/action01.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(2).get {
+background: url(img/action02.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(3).get {
+background: url(img/action03.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(4).get{
+background: url(img/action04.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(5).get{
+background: url(img/action05.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(6).get{
+background: url(img/action06.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(7).get{
+background: url(img/action07.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(8).get{
+background: url(img/action08.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(9).get{
+background: url(img/action09.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(10).get{
+background: url(img/action10.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(11).get{
+background: url(img/action11.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(12).get{
+background: url(img/action12.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(13).get{
+background: url(img/action13.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(14).get{
+background: url(img/action14.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(15).get{
+background: url(img/action15.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(16).get{
+background: url(img/action16.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(17).get{
+background: url(img/action17.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(18).get{
+background: url(img/action18.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(19).get{
+background: url(img/action19.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(20).get{
+background: url(img/action20.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(21).get{
+background: url(img/action21.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(22).get{
+background: url(img/action22.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(23).get{
+background: url(img/action23.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(24).get{
+background: url(img/action24.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(25).get{
+background: url(img/action25.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(26).get{
+background: url(img/action26.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(27).get{
+background: url(img/action27.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(28).get{
+background: url(img/action28.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(29).get{
+background: url(img/action29.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(30).get{
+background: url(img/action30.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(31).get{
+background: url(img/action31.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(32).get{
+background: url(img/action32.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(33).get{
+background: url(img/action33.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(34).get{
+background: url(img/action34.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(35).get{
+background: url(img/action35.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(36).get{
+background: url(img/action36.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(37).get{
+background: url(img/action37.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(38).get{
+background: url(img/action38.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(39).get{
+background: url(img/action39.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(40).get{
+background: url(img/action40.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(41).get{
+background: url(img/action41.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(42).get{
+background: url(img/action42.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(43).get{
+background: url(img/action43.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(44).get{
+background: url(img/action44.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(45).get{
+background: url(img/action45.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(46).get{
+background: url(img/action46.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(47).get{
+background: url(img/action47.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(48).get{
+background: url(img/action48.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(49).get{
+background: url(img/action49.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(50).get{
+background: url(img/action50.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(51).get{
+background: url(img/action51.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(52).get{
+background: url(img/action52.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(53).get{
+background: url(img/action53.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(54).get{
+background: url(img/action54.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(55).get{
+background: url(img/action55.png) no-repeat left top;
+}
+
+#wrap .box:nth-of-type(56).get{
+background: url(img/action56.png) no-repeat left top;
+}
+
+
+#material {
+margin: 20px auto;
+width: 700px;
+}
+
+#material .inner {
+display: flex;
+flex-wrap: wrap;
+margin: auto;
+}
+
+#material .materials {
+margin: 5px;
+padding: 0 0 10px;
+width: 165px;
+background: #272727;
+box-sizing: border-box;
+font-size: 13px;
+cursor: pointer;
+}
+
+#material .materials.get {
+display: none;
+}
+
+#material .materials ul {
+padding: 0 5px;
+}
+
+#material .materials ul li {
+list-style-type: none;
+}
+
+#material .materials h3 {
+margin-bottom: 5px;
+padding: 5px;
+background: #20403f;
+}
+
+#material .materials p {
+margin: 10px 0;
+padding: 2px;
+text-align: center;
+background: #7c7668;
+}
+
+#remaining {
+margin: 20px auto;
+width: 700px;
+}
+
+#remaining ul {
+overflow: hidden;
+}
+
+#remaining ul li {
+margin-left: 20px;
+width: 45%;
+float: left;
+font-size: 13px;
+}
+
+#address {
+padding: 10px;
+text-align: center;
+font-size: 13px;
+}
+
+.ad01 {
+margin: auto;
+padding: 10px 0;
+width: 600px;
+}
+
+@media screen and (max-width: 750px) {
+.dpc {
+display: none;
+}
+
+.dsp {
+display: block;
+}
+
+#app {
+padding: 0 15px;
+}
+
+.update {
+margin: 15px 5px;
+width: auto;
+}
+
+.exp {
+margin: 0 0 20px;
+width: auto;
+}
+
+.exp li {
+font-size: 12px;
+}
+
+#wrap {
+display: flex;
+flex-wrap: wrap;
+margin: 0 0 20px;
+padding: 2px 0;
+width: auto;
+}
+
+#wrap .box {
+margin: 1%;
+width: 8%;
+height: 8%;
+}
+
+#material {
+margin: 15px 0;
+width: auto;
+}
+
+#material .inner {
+display: block;
+margin: auto;
+}
+
+#material .materials {
+width: auto;
+}
+
+#wrap .box,
+#wrap .box.get {
+background-size: 100% auto!important;
+}
+
+#remaining {
+width: auto;
+}
+
+#remaining ul li {
+width: auto;
+float: none;
+font-size: 12px;
+}
+
+.ad01 {
+padding: 10px;
+width: auto;
+}
+}
